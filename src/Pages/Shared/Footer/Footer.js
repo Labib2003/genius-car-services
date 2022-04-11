@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Footer = () => {
-    const date = new Date().getFullYear();
+    const year = new Date().getFullYear();
     return (
         <footer>
-            <p><small>&copy; {date}</small></p>
+            <p><small>&copy; {year}</small></p>
         </footer>
     );
 };
