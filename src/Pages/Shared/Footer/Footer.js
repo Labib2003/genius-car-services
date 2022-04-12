@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer>
+        <footer className='text-center mt-5'>
             <p><small>&copy; {year}</small></p>
         </footer>
     );
