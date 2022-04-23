@@ -4,11 +4,11 @@ import { Button } from 'react-bootstrap';
 import './Service.css'
 
 const Service = ({ service }) => {
-    const { id, name, img, price, description } = service;
+    const { _id, name, img, price, description } = service;
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = (id) => {
-        navigate(`/service/${id}`)
+    const navigateToServiceDetail = (_id) => {
+        navigate(`/service/${_id}`)
     }
 
     return (
@@ -17,7 +17,7 @@ const Service = ({ service }) => {
             <h2>{name}</h2>
             <p>${price}</p>
             <p>{description}</p>
-            <Button onClick={() => navigateToServiceDetail(id)}>Book {name}</Button>
+            <Button onClick={() => navigateToServiceDetail(_id)}>Book {name}</Button>
         </div>
     );
 };
